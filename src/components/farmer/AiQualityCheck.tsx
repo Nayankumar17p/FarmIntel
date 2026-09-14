@@ -315,6 +315,19 @@ export const AiQualityCheck: React.FC<AiQualityCheckProps> = ({
                 <strong>AI estimate only</strong> — final quality, moisture, and test weight should be verified physically at the mandi or buyer weighbridge.
               </p>
             </div>
+
+            {/* Action Buttons */}
+            {onApplyGrade && (
+              <div className="pt-2 flex items-center justify-end">
+                <button
+                  onClick={() => onApplyGrade(result?.grade || "Grade A (Premium)", result)}
+                  className="w-full sm:w-auto py-2.5 px-5 rounded-2xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs flex items-center justify-center space-x-2 shadow-xs transition-colors cursor-pointer"
+                >
+                  <FileCheck className="w-4 h-4" />
+                  <span>Attach Grade to Crop Lot &amp; View Listings →</span>
+                </button>
+              </div>
+            )}
           </div>
         </div>
       </div>
