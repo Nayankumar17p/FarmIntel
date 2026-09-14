@@ -1,0 +1,6 @@
+{
+  "name": "FarmIntel",
+  "description": "AI-Powered Farm-to-Market Intelligence & Trading Platform helping Indian farmers optimize where and when to sell crops for maximum net profit.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
